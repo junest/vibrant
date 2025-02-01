@@ -2176,6 +2176,10 @@ header{
 
 @media screen and (max-width:767px){
 
+    .parallex-section > .section-padding {
+        padding: 3.5rem;
+        position: relative;
+    }
     section{
         padding: 4.5rem 0;
     }
