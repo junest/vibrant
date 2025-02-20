@@ -1852,6 +1852,8 @@ header{
     font-weight: 300;
     color: #212622;
     margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 .pricing-item{
     position: relative;
