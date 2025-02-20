@@ -1759,8 +1759,8 @@ header{
 .standalone-detail .heading{
     margin-bottom: 20px;
     font-size: 50px;
-    color: #202020;
-    font-weight: bold;
+    color: #0499b6;
+    font-weight: 300;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -1777,16 +1777,180 @@ header{
     padding-bottom: 100px;
 }
 .standalone-area .gradient-text1{
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 12px;
     font-family: 'Oswald', sans-serif;
-    font-size: 45px;
 }
 .standalone-area .stand-img-des .para_text{
     font-family: 'Roboto', sans-serif;
     color: #202020;
 }
+.c-standalone h1.heading {
+    font-size: 42px;
+}
+.price-head-title {
+    color: #ff999a;
+    background-color: #0499b6;
+    padding: 20px;
+    font-weight: 400;
+}
+/* .price-packs {
+    background-color: #0899b6;
+    position: relative;
+    overflow: visible;
+    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+} */
 
+/* ===================================
+    Pricing Starts
+====================================== */
+.hvr-bg-pink:hover {
+    background-color: #ff999a;
+}
+.bold-head {
+    color: #ff999a;
+    font-weight: 500;
+}
+.pricing-padding {
+    padding: 7.5rem 0 4rem;
+}
+.price-transform {
+    transform: translateY(-67px);
+}
+.price-box, .price-box2{
+    color: #212622;
+    border-bottom: 1px solid #e6e1e1;
+}
+.price-box {
+    padding-bottom: 10px;
+}
+.price-box2{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.price-sub-heading {
+    font-size: 15px;
+    color: #a8a8a8;
+}
+.price {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.dollar {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    transform: translateX(-95%);
+    top: 10px;
+    font-weight: 400;
+}
+.price h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: #212622;
+    margin-bottom: 0;
+}
+.pricing-item{
+    position: relative;
+    padding: 2rem 3rem 4rem;
+    max-width: 365px;
+    margin: 5px auto;
+    cursor: pointer;
+    z-index:1;
+    transition: 1s;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+.price span.month, .price span.price-val{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #212622;
+    text-transform: capitalize;
+}
+.price span.price-val {
+    font-size: 24px;
+}
+.price-description {
+    padding-bottom: 40px;
+}
+.price-description p{
+    color: #535353;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.price-description p:last-child {
+    margin-bottom: 0;
+}
+.quarter-triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height:0;
+    border: 55px solid #f1c30f;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 0;
+    transition: 1s;
+}
+.triangle-inner-content i {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    z-index: 1;
+}
+.triangle-inner-content span {
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 100;
+    transform: rotate(-45deg);
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+.price_title h4 {
+    font-size: 1.5rem;
+}
+.pricing-item:hover .price-box, .pricing-item.price-transform:hover .price-box2,
+.pricing-item:hover .price h2, .pricing-item:hover .price-sub-heading,
+.pricing-item:hover .price span, .pricing-item:hover .price-description p,
+.two-col-pricing .pricing-item:hover .price_title p, .two-col-pricing .pricing-item:hover .price-description p:before {
+    color: #ffffff;
+}
+.pricing-item:hover .price-box, .pricing-item:hover .price-box2 {
+    border-color: #ffffff;
+}
+.pricing-item .btn-pink {
+    border-color: #e57bff;
+    background-color: #e57bff;
+    color: #fff;
+}
+.pricing-item .btn-yellow {
+    border-color: #f1c30f;
+    background-color: #f1c30f;
+    color: #fff;
+}
+.pricing-item .btn-blue {
+    border-color: #84a1d2;
+    background-color: #84a1d2;
+    color: #fff;
+}
+.pricing-item .btn-pink:focus, .pricing-item .btn-pink:hover, .pricing-item .btn-yellow:focus, .pricing-item .btn-yellow:hover, .pricing-item .btn-blue:focus, .pricing-item .btn-blue:hover {
+    color: #212622;
+}
+.pricing-item:hover .btn-yellow, .pricing-item:hover .btn-pink, .pricing-item:hover .btn-blue {
+    background: transparent;
+    border-color: #ffffff;
+}
 
 /* ===================================
    Fix Nav
@@ -1849,7 +2013,7 @@ header{
 .page-title{
     position:relative;
     text-align:center;
-    background:url("../img/standalone.jpg");
+    background:url("../img/price-list-main-bg.jpg");
     background-size: cover;
     background-position: top center;
     height: 100vh;
@@ -1878,7 +2042,7 @@ header{
 
 .page-title h2{
     position:relative;
-    color:#202020;
+    color:#0899b6;
     font-weight:600;
     line-height:1.2em;
     margin-bottom: 10px;
