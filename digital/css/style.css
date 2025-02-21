@@ -123,6 +123,8 @@ section{padding: 7.5rem 0;}
 .btn.btn-purple {background: #02aeb3; border-color: #02aeb3; color: #ffffff}
 .btn.btn-purple:hover, .btn.btn-purple:focus {background: transparent !important; border-color: #02aeb3; color: #02aeb3 !important}
 .btn.btn-hvr-white:hover, .btn.btn-hvr-white:focus {background: #ffffff !important; border-color: #ffffff; color: #585858 !important}
+.btn.btn-pink {background:#ff999a; border-color: #EE8B8DFF; color: #ffffff}
+.btn.btn-pink:hover, .btn.btn-pink:focus {background: #ffffff !important; border-color: #ffffff ; color:  #2b2b2b !important}
 
 
 .white-tran-black-btn{font-size: 12px;font-family: 'Roboto', sans-serif;padding: 10px 30px;color:#ffffff !important;font-weight: 600;background-color:transparent;border:1px solid #ffffff !important;border-radius: 0px;-webkit-transition: .8s ease !important;-o-transition: .8s ease !important;transition: .8s ease !important; cursor: pointer}
@@ -367,6 +369,9 @@ header{
     color: #c13584 !important;
 }
 
+.contact-social-icons .upper-social-icons li .youtube-text-hvr:hover {
+    color: #b2071d !important;
+}
 /*.contact-social-icons a i:hover.fa-facebook-f {color: #3B5998;}*/
 /*.contact-social-icons a i:hover.fa-twitter {color: #0976B4;}*/
 /*.contact-social-icons a i:hover.fa-linkedin-in {color: #0976B4;}*/
@@ -1631,6 +1636,273 @@ header{
     transform: rotate(-30deg);
 }
 
+
+/* ===================================
+   Get Started Model Popup
+====================================== */
+
+.quote-content{
+    text-align: center;
+    max-width: 900px;
+    padding: 50px 150px;
+    overflow: visible;
+    background-color: #0899b6;
+}
+
+.quote-content .contact-form .form-control{
+    border-radius: 0;
+    padding: 0;
+}
+
+.quote-content #quote_submit_btn{
+    margin-bottom: -120px;
+}
+
+/*CheckBox*/
+
+.quote-content .form-check{
+    padding: 50px 0 8px 0;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.checkbox-lable {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #ff999a;
+}
+
+.checkbox-lable input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px dotted #d4d4d4;
+}
+
+.checkbox-lable:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-lable input:checked ~ .checkmark {
+    background-color: #ff999a;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-lable input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-lable .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.quote-content .fancybox-close-small {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background: #ff999a;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.quote-content .fancybox-close-small:after {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: -1px;
+    font: initial;
+    font-size: 35px;
+    color: #fff;
+}
+
+.fancybox-close-small:focus:after{
+    outline: none;
+}
+
+.quote-content .fancybox-close-small:hover:after,
+.quote-content .fancybox-close-small:focus:after{
+    background-color: transparent;
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff999a;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+/* ===================================
+       modal contact
+====================================== */
+#animatedModal input::placeholder, #animatedModal textarea::placeholder {
+    color: #cccccc; /* Change Color */
+}
+#animatedModal .contact-sec {
+    background-image: url("../images/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#animatedModal .contact-sec .contact-details, #animatedModal .contact-sec .contact-form-box{
+    padding-top: 50px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-heading{
+    color: #000000;
+    font-size: 40px;
+    font-family: 'oswald',sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-address{
+    font-size: 16px;
+    color: #000000;
+    opacity: .8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-list{
+    padding-left: 0;
+}
+
+#animatedModal .contact-sec .contact-details .contact-list li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    list-style: none;
+    color: #000000;
+    font-size: 16px;
+    opacity: .8;
+}
+
+#animatedModal .contact-sec .contact-details .contact-list li:nth-child(even){
+    margin-bottom: 20px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-list li:last-child{
+    margin-bottom: 50px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-s-media{
+    padding-left: 0;
+    margin-bottom: 0;
+    right: auto;
+    left: -10px;
+}
+
+#animatedModal .contact-sec .contact-details .contact-s-media li {
+    list-style: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#animatedModal .contact-sec .contact-details .contact-s-media li:last-child {
+    margin-right: 0;
+}
+
+#animatedModal .contact-sec .contact-details .contact-s-media li a{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
+    transition: .8s ease;
+}
+
+#animatedModal .contact-sec .contact-details .page-footer{
+    left: calc(50% - 125px);
+}
+
+#animatedModal .contact-sec{
+    padding-bottom: 120px;
+}
+
+#animatedModal .contact-form {
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#animatedModal .contact-form .form-control {
+    border: none;
+    border-bottom:1px solid #dadada;
+    padding: 10px 0;
+    background: transparent;
+    font-weight: normal;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 32px;
+    color: #eeeeee;
+    font-size: 14px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: border .9s ease;
+    -o-transition: border .9s ease;
+    transition: border .9s ease;
+}
+
+#animatedModal .contact-form .form-control:focus {
+    border-color: #ff999a;
+}
+
+#animatedModal .contact-form textarea {
+    min-height: 130px;
+    resize: none;
+}
+
+#animatedModal .contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
 
 /* ===================================
    Footer
