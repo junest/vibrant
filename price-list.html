@@ -74,7 +74,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-end align-items-center">
-                        <a href="javascript:void(0);" class="btn btn-large btn-rounded white-tran-black-btn">Register and Join</a>
+                        <a href="" class="btn btn-large btn-rounded white-tran-black-btn" data-animation-duration="500" data-fancybox data-src="#animatedModal">Register and Join</a>
                     </div>
                 </div>
             </div>
@@ -554,6 +554,51 @@
     </a>
 </div>
 
+<!--Get Started Model Popup-->
+<div class="quote-content hidden animated-modal" id="animatedModal">
+    <!--Heading-->
+    <div class="pb-md-5 p-0 text-center">
+        <h2 class="main-font font-weight-300 text-white mt-2">Register and Join</h2>
+    </div>
+    <!--Contact Form-->
+    <form class="contact-form" id="modal-contact-form-data">
+        <div class="row">
+            <!--Result-->
+            <div class="col-12" id="quote_result"></div>
+
+            <!--Left Column-->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="quote_name" name="quoteName" placeholder="Name" required="" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="quote_contact" name="userPhone" placeholder="Phone (whatsapp)" required="" type="tel">
+                </div>
+            </div>
+
+            <!--Right Column-->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required="" type="email">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" id="quote_address" name="userAddress" placeholder="Address" required="" type="text">
+                </div>
+            </div>
+
+            <!--Button-->
+            <div class="col-md-12">
+                <div class="form-check">
+                    <label class="checkbox-lable font-weight-200 font-16">Contact by phone is preferred
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-large btn-rounded btn-pink" id="quote_submit_btn">Submit Now</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 
 <!-- vendersJavaScript -->
