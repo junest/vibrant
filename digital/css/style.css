@@ -2127,6 +2127,10 @@ header{
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
+.price2 h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
 .pricing-item{
     position: relative;
     padding: 2rem 3rem 4rem;
@@ -2137,6 +2141,9 @@ header{
     transition: 1s;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     background: #ffffff;
+}
+.pricing-item.new {
+    max-width: 100%;
 }
 .price span.month, .price span.price-val{
     font-family: 'Open Sans', sans-serif;
