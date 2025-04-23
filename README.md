@@ -1,2 +1,1 @@
-# vibrant
-vibrant pilates
+# nu-vibrant
